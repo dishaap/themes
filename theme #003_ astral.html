@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<!--------------------------------------------------------------------
+ 
+theme #003: astral by di (@duskypetals) on the blog @chaithms
+ 
+- code belongs to me, except for the following excerpts
+ 
+* audio post styling by @roxiestheme
+* tumblr controls by @cyantists
+* custom like/reblog buttons by @shythemes
+* icons on fontawesome
+ 
+- there might be errors in the code, because this is my first time theming. please drop an ask in our inbox (https://chaithms.tumblr.com/ask) or send a dm and i'll be sure to answer.
+ 
+- you may modify some parts of the code, but please do not use this as a base code or change it beyond recognition.
+ 
+- i have not used an external css sheet, so please take care that you don't modify the css.
+ 
+- please do not remove the credits.
+ 
+- enjoy!!! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+ 
+-------------------------------------------------------------------->
+
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta name="description" content="" />
+    <meta http-equiv="x-dns-prefetch-control" content="off"/>
+    <link href="https://fonts.googleapis.com/css?family=Karla|Raleway|Roboto" rel="stylesheet">
+    <script type=”text/javascript” src=”http://static.tumblr.com/p2evvtm/Wycm17d1m/tumblr_search_box.js”></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src=“http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js”></script>
+
+    
+    <!--META TAGS-->
+    <meta name="color:Background Color" content="#fff" />
+    <meta name="color:Text" content="#000" />
+    <meta name="color:Accent 1" content="#fa76a0" />
+    <meta name="color:Accent 2" content="#fa8e76" />
+    <meta name="color:Accent 3" content="#fad076"/>
+    <meta name="color:Accent 4" content="#faaf76" />
+    <meta name="select:Font" content="'Roboto'" title="Roboto" />
+    <meta name="select:Font" content="'Karla'" title="Karla" />
+    <meta name="select:Font" content="'Raleway'" title="Raleway" />
+    <meta name="text:Link 1 URL" content="/" />
+    <meta name="text:Link 1 Name" content="one" />
+    <meta name="text:Link 2 URL" content="/" />
+    <meta name="text:Link 2 Name" content="two" />
+    <meta name="text:Link 3 URL" content="/" />
+    <meta name="text:Link 3 Name" content="three" />
+    <meta name="text:Link 4 URL" content="/" />
+    <meta name="text:Link 4 Name" content="four" />
+    <meta name="text:Link 5 URL" content="/" />
+    <meta name="text:Link 5 Name" content="five" />
+    <meta name="text:Link 6 URL" content="/" />
+    <meta name="text:Link 6 Name" content="six" />
+    <meta name="text:Update Tab 1 Header" content="One" />
+    <meta name="text:Update Tab 1 Content" content="" />
+    <meta name="text:Update Tab 2 Header" content="Two" />
+    <meta name="text:Update Tab 2 Content" content="" />
+    <meta name="text:Update Tab 3 Header" content="Three" />
+    <meta name="text:Update Tab 3 Content" content="" />
+    <meta name="if:Small Cursor" content="0" />
+    <meta name="if:Show Tags" content="0" />
+    <meta name="if:Search Bar" content="0" />
+    
+    
+    
+    <style type="text/css">
+        
+        body {
+            font-size: 10px;
+            font-family: {select:Font}, sans-serif;
+            color: {color:Text};
+            background-color: {color:Background Color};
+        }
+        
+        {block:IfSmallCursor}*, body, a, a:hover {cursor: url(https://78.media.tumblr.com/tumblr_lqs4qoKE1V1qfoi4t.png), auto;}{/block:IfSmallCursor}
+        
+        a {
+            color: {color:Text};
+            text-decoration: underline {color:Accent 2};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        a:hover {
+            color: {color:Accent 2};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        a.links {
+            color: {color:Accent 2};
+            text-decoration: none;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        a.links:hover {
+            color: {color:Accent 4};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        a.permalink:hover {
+            color: {color:Text};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        a.pagelinks {
+            color: {color:Text};
+            text-decoration: none;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        a.pagelinks:hover {
+            color: {color:Accent 4};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        svg {
+           width:10px;
+           height:auto;
+           opacity:.5;
+           padding:1px;
+           display:block;
+           overflow:visible;
+        }
+ 
+        .controls a {
+           position:relative;
+           display:inline-block;
+           overflow:hidden;
+           padding:10px 5px 5px 5px;
+           width:12px;
+           height:12px;
+        }
+        .controls .reblog {
+           opacity:.93;
+           margin-left: 168px;
+        }
+        .controls .reblog svg {
+           width:9px;
+           margin-top:1px;
+        }
+        .controls .like .liked + svg {
+           opacity:1;
+        }
+        .controls .like .liked + svg path {
+           fill:#ec5a5a;
+        }
+        .controls .like .like_button {
+           position:relative;
+        }
+        .controls .like .like_button iframe {
+           position:absolute;
+           top:0;
+           left:0;
+           bottom:0;
+           right:0;
+           z-index:2;
+           opacity:0;
+        }
+        
+        .postcol {
+            margin-left: 500px;
+            margin-top: 90px;
+        }
+        
+        .posts {
+            width: 400px; 
+            padding-bottom: 20px;
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid {color:Accent 1};
+        }
+        
+        .posts blockquote {
+            border-left: 1px solid {color:Accent 4};
+            padding-left: 5px;
+        }
+ 
+        .posts img, .posts li, .posts blockquote {
+            max-width: 100%;
+        }
+        
+        .texttitle {
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        
+        .textbody {
+            text-align: justify;
+            line-height: 15px;
+        }
+    
+        .askerpic {
+            border-radius: 100%;
+            position: absolute;
+            margin-bottom: 10px;
+        }
+        
+        .question {
+            display: inline-block;
+            margin-top: 5px;
+            padding-left: 30px;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        
+        .answer {
+            padding-top: 10px;
+            padding-left: 5px;
+            text-align: justify;
+        }
+        
+        h5 {
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .source {
+            padding-left: 5px;
+            font-style: italic;
+        }
+        
+        .links {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 11px;
+        }
+        
+        .linkdesc {
+            text-align: justify;
+        }
+        
+        .chattitle {
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+        }
+        
+        .chat li {
+            list-style-type: none;
+            padding-bottom: 5px;
+        }
+ 
+        .label {
+            color: {color:Accent 4};
+            font-weight: bold;
+        }
+        
+        .photo {
+            margin: auto;
+        }
+ 
+        .photocaption, .photosetcaption, .videocaption, .panoramacaption {
+            margin: auto;
+        }
+        
+        .tag {
+            text-align: center;
+        }
+        .sidebar {position: fixed;}
+        
+        .sidebar1 {
+            width: 100px;
+            border: 1px solid {color:Accent 1};
+            padding: 5px 10px 10px 5px;
+            margin-left: 120px;
+            position: fixed;
+            top: 100px;
+        }
+        
+        .blogtitle {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: {color:Accent 2};
+        }
+        
+        .blogdesc {
+            text-align: justify;
+        }
+        
+        
+        .sidebar2 {
+            margin-left: 123px;
+            margin-top: 90px;
+            position: fixed;
+            border-bottom: 1px solid {color:Accent 1};
+        }
+        
+        .index {
+            padding: 5px 5px 5px 4px;
+            display: inline-block;
+        }
+        
+        .fa-home, .fa-archive, .fa-envelope, .fa-paper-plane, .fa-user, .fa-star, .fa-asterisk, .fa-heart {
+            font-size: 16px;
+            color: {color:Accent 2};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        .fa-home:hover, .fa-archive:hover, .fa-envelope:hover, .fa-paper-plane:hover, .fa-user:hover, .fa-star:hover, .fa-asterisk:hover, .fa-heart:hover  {
+            color:{color:Accent 4};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        .archive {
+            padding: 5px 5px 5px 2px;
+            display: inline-block;
+        }
+        
+        .link1 {
+            padding: 5px 5px 5px 5px;
+            display: inline-block;
+        }
+        
+        .link2 {
+            padding: 5px 5px 5px 1px;
+            display: inline-block; 
+        }
+        
+        .sidebar3 {
+            margin-top: 125px;
+            margin-left:122px;
+            position: fixed;
+        }
+        
+        .link3 {
+            padding: 5px 5px 5px 7px;
+            display: inline-block;
+        }
+        
+        .link4 {
+            padding: 5px 5px 5px 3px;
+            display: inline-block;
+        }
+        
+        .link5 {
+            padding: 5px 5px 5px 3px;
+            display: inline-block;
+        }
+        
+        .link6 {
+            padding: 5px 5px 5px 3px;
+            display: inline-block;
+        }
+
+        #update1{
+            height:12px;
+            text-align:center;
+            overflow:hidden;
+            padding-top: 5px;
+            text-transform:uppercase;
+            border-bottom: 1px solid {color:Accent 1};
+            letter-spacing:1px;
+            font-size:8px;
+            line-height:10px;
+            z-index:999999999999999999999;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+        }
+        
+        #update1:hover{
+            height:50px;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+        }
+
+        #update2{
+            height:12px;
+            text-align:center;
+            overflow:hidden;
+            padding-top: 5px;
+            text-transform:uppercase;
+            letter-spacing:1px;
+            border-bottom: 1px solid {color:Accent 1};
+            font-size:8px;
+            line-height:10px;
+            z-index:999999999999999999999;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+        }
+
+        #update2:hover{
+            height:50px;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+        }
+
+        #update3{
+            height:12px;
+            text-align:center;
+            overflow:hidden;
+            padding-top: 5px;
+            text-transform:uppercase;
+            
+            letter-spacing:1px;
+            font-size:8px;
+            line-height:10px;
+            z-index:999999999999999999999;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+        }
+
+        #update3:hover{
+            height:50px;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+        }
+
+        #updates{
+            text-align:left;
+            font-size:8px;
+            text-transform:uppercase;
+            opacity: .8;
+            position:fixed;
+            font-family: {select:Font}, sans-serif;
+            left:25px;
+            background-color:transparent;
+            letter-spacing:1px;
+            width:100px;
+            z-index:9999;
+            padding:4px;
+            margin-top:186px;
+            margin-left: 103px;
+        }
+
+        .search {
+            position: fixed;
+            margin-top: 293px;
+            margin-left: 122px;
+            border: {color:Accent 1} solid 1px;
+        }
+ 
+        .sfm input {
+            background-color: {color:Background Color};
+            width: 46px;
+            font-size: 8px;
+            border: 0px;
+            text-transform: uppercase;
+            margin-top: 0px;
+            color: {color:Accent 2};
+            letter-spacing: 1px;
+            padding: 4px 10px 4px 5.5px;
+            font-family: {select:Font};
+        }
+        
+        .fa-comments {
+            size: 10px;
+        }
+        
+        .postnotes {
+            text-align: center;
+            font-variant: small-caps;
+            padding-top: 10px;
+        }
+        
+        .notecontainer {
+          margin: 20px auto;
+          width: 500px;
+          font-size: 11px;
+        }
+ 
+        .notecontainer ol.notes {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+ 
+        .notecontainer img.avatar {
+          margin-right: 10px;
+          margin-top: 5px;
+          width: 16px;
+          height: 16px;
+          border-radius: 100%;
+        }
+        
+        .index .home, .archive .arch, .link1 .desc1, .link2 .desc2 {
+            visibility: hidden;
+            width: 45px;
+            border: 1px solid {color:Accent 3};
+            color: {color:Text};
+            text-align: center;
+            padding: 5px 0;
+            top: -20px;
+            border-radius: 3px;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            -webkit-transition: opacity 1s;
+            -o-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            transition: opacity 1s;
+            text-transform: uppercase;
+            font-size: 8px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        
+        .link3 .desc3, .link4 .desc4, .link5 .desc5, .link6 .desc6 {
+            visibility: hidden;
+            width: 45px;
+            border: 1px solid {color:Accent 3};
+            color: {color:Text};
+            text-align: center;
+            padding: 5px 0;
+            bottom: -20px;
+            border-radius: 3px;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            -webkit-transition: opacity 1s;
+            -o-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            transition: opacity 1s;
+            text-transform: uppercase;
+            font-size: 8px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .index:hover .home, .archive:hover .arch, .link1:hover .desc1, .link2:hover .desc2, .link3:hover .desc3, .link4:hover .desc4, .link5:hover .desc5, .link6:hover .desc6 {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transition: opacity 1s;
+            -o-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            transition: opacity 1s;
+        }
+        
+        .credit a {
+            bottom: 10px;
+            right: 10px;
+            font-size: 10px;
+            position: fixed;
+            color: {color:Accent 3};
+            background-color: {color:Background Color};
+            padding: 2px;
+            border: 0.5px solid {color:Accent 1};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        .fa-coffee:hover {
+            color: {color:Accent 2};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        
+        ::-webkit-scrollbar-thumb:vertical {
+            background-color:{color:Accent 3};
+            height:100px;
+            padding: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:horizontal {
+            background-color:{color:Accent 3};
+            height:5px;
+            padding: 5px;
+        }
+        
+        ::-webkit-scrollbar { 
+            height:5px;
+            width:5px;
+            background-color: {color:Background Color};
+        }
+        
+        iframe.tmblr-iframe {
+            z-index:99999999999999!important;
+            top:-2px!important;
+            right:0!important;
+            opacity:0;
+            padding-right:38px;
+            filter:invert(1) contrast(150%);
+            -webkit-filter:invert(1) contrast(150%);
+            -o-filter:invert(1) contrast(150%);
+            -moz-filter:invert(1) contrast(150%);
+            -ms-filter:invert(1) contrast(150%);
+            transform:scale(0.65);
+            transform-origin:100% 0;
+            -webkit-transform:scale(0.65);
+            -webkit-transform-origin:100% 0;
+            -o-transform:scale(0.65);
+            -o-transform-origin:100% 0;
+            -moz-transform:scale(0.65);
+            -moz-transform-origin:100% 0;
+            -ms-transform:scale(0.65);
+            -ms-transform-origin:100% 0;
+        }
+
+        iframe.tmblr-iframe:hover {
+            opacity:0.6!important;}
+        
+        .hcontrols {
+            position:fixed;
+            top:0;
+            right:0;
+            z-index:999999999;}
+        
+        .hcontrols svg {
+            width:14px;
+            height:14px;
+            padding:9px;}
+        
+        .hcontrols svg path {
+            fill: {color:Accent 4};
+        }
+        
+        .pagination {
+            font-size: 14px;
+            padding: 5px;
+            text-align: center;
+            margin-left: 20px;
+            color: {color:Accent 4};
+        }
+        
+        .fa-arrow-circle-left, .fa-arrow-circle-right {
+            font-size: 13px;
+            color: {color:Accent 2};
+        }
+
+        {CustomCSS}
+        
+    </style>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    
+    <script src="https://use.fontawesome.com/de4df345a4.js"></script>
+    
+    <script>
+       $(document).ready(function() {
+          $('iframe.tumblr_audio_player').load( function() {
+             $('iframe.tumblr_audio_player').contents().find("head")
+                .append($("<style type='text/css'> .audio-player{background:{color:Accent 3} !important} </style>"));
+          });
+       });
+    </script>
+        
+</head>
+
+<body>
+
+    <div class="sidebar">
+    <div class="sidebar1">
+        <span class="blogtitle">{Title}</span> | <span class="blogdesc">{Description}</span>
+        </div>
+        
+        <div class="sidebar2">
+        <span class="index"><a href="/" class="homelink"><i class="fas fa-home" aria-hidden="true"></i></a><span class="home">home</span></span>
+        <span class="archive"><a href="/archive" class="homelink"><i class="fas fa-archive" aria-hidden="true"></i></a><span class="arch">archive</span></span>
+        <span class="link1"><a href="{text:Link 1 URL}" class="homelink"><i class="fas fa-envelope" aria-hidden="true"></i></a><span class="desc1">{text:Link 1 Name}</span></span>
+        <span class="link2"><a href="{text:Link 2 URL}"><i class="fas fa-paper-plane" aria-hidden="true"></i></a><span class="desc2">{text:Link 2 Name}</span></span>
+    </div>
+    
+        <div class="sidebar3">
+            <span class="link3"><a href="{text:Link 3 URL}" class="homelink"><i class="fas fa-user" aria-hidden="true"></i></a><span class="desc3">{text:Link 3 Name}</span></span>
+            <span class="link4"><a href="{text:Link 4 URL}" class="homelink"><i class="fas fa-star" aria-hidden="true"></i></a><span class="desc4">{text:Link 4 Name}</span></span>
+            <span class="link5"><a href="{text:Link 5 URL}" class="homelink"><i class="fas fa-asterisk" aria-hidden="true"></i></a><span class="desc5">{text:Link 5 Name}</span></span>
+            <span class="link6"><a href="{text:Link 6 URL}" class="homelink"><i class="fas fa-heart" aria-hidden="true"></i></a><span class="desc6">{text:Link 6 Name}</span></span>
+        </div>
+        
+
+        <div id="updates">
+            <center>
+            <div id="update1">
+                <div style="font-size:10px; font-family: 'Raleway', sans-serif; text-transform:uppercase; letter-spacing:2px; font-weight:bold;">{text:Update Tab 1 Header}</div> <div style="padding-top:1px; text-transform:uppercase; opacity:.9; font-family: 'Raleway', sans-serif; font-size:9px; line-height:10px; text-align:center; color:{color:Accent 3};">
+                <br>
+                {text:Update Tab 1 Content}
+                </div>
+            </div>
+            
+            <div id="update2">
+                <div style="font-size:10px; font-family: 'Raleway', sans-serif; text-transform:uppercase; letter-spacing:2px; font-weight:bold;">{text:Update Tab 2 Header}</div> <div style="padding-top:1px; text-transform:uppercase; opacity:.9; font-family: 'Raleway', sans-serif; font-size:9px; line-height:10px; text-align:center; color:{color:Accent 3};">
+                <br>
+                {text:Update Tab 2 Content}
+            </div></div>
+            
+            <div id="update3">
+                <div style="font-size:10px; font-family: 'Raleway', sans-serif; text-transform:uppercase; letter-spacing:2px; font-weight:bold;">{text:Update Tab 3 Header}</div> <div style="padding-top:1px; text-transform:uppercase; opacity:.9; font-family: 'Raleway', sans-serif; font-size:9px; line-height:10px; text-align:center; color:{color:Accent 3};">
+                <br>
+                {text:Update Tab 3 Content}
+                </div>
+            </div>
+        </div>
+
+         {block:IfSearchBar}<div class="search"><form action="/search" method="get" class="sfm">
+            <input type="text" name="q" value="{SearchQuery}"/>
+            <input type="submit" value="Search"/>
+        </form></div>{/block:IfSearchBar}
+        
+        </div>
+
+    
+    <!--POSTS-->
+    <div class="postcol">
+ 
+        {block:Posts}
+        <div class="posts">
+           
+            <!--TEXT POST-->
+            {block:Text}
+            {block:Title}<div class="texttitle">{Title}</div>{/block:Title}
+            <div class="textbody">{Body}</div>
+            {/block:Text}
+           
+            <!--ANSWER POST-->
+            {block:Answer}
+                <img src="{AskerPortraitURL-24}" class="askerpic"><div class="question">{Asker} asked: "{Question}"</div>
+                <div class="answer">{Answer}</div>
+            {/block:Answer}
+           
+            <!--QUOTE POST-->
+            {block:Quote}
+                <div class="quote">
+                <div class="quotetext_{Length}"><h5>"{Quote}"</h5></div><br><br>
+                {block:Source}<div class="source">&mdash;{Source}</div>{/block:Source}
+                </div>
+            {/block:Quote}
+           
+            <!--LINK POST-->
+            {block:Link}
+                <a href="{URL}" class="links">{Name}</a>
+                {block:Description}<div class="linkdesc">{Description}</div>{/block:Description}  
+            {/block:Link}
+           
+            <!--CHAT POST-->
+                {block:Chat}<div class="chat">
+{block:Title}<div class="chattitle">{Title}</div>{/block:Title}
+{block:Lines}<li>{block:Label}<span class="label">{Label} </span>{/block:Label}{Line}</li>{/block:Lines}</div>
+            {/block:Chat}
+           
+            <!--PHOTO POST-->
+            {block:Photo}
+                {LinkOpenTag}<img src="{PhotoURL-400}" alt="{PhotoAlt}" class="photo">{LinkCloseTag}
+                {block:Caption}<div class="photocaption">{Caption}</div>{/block:Caption}
+            {/block:Photo}
+           
+            <!--PHOTOSET POST-->
+            {block:Photoset}
+                {Photoset-400}
+                {block:Caption}<div class="photosetcaption">{Caption}</div>{/block:Caption}
+            {/block:Photoset}
+           
+            {block:Panorama}
+                {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}">{LinkCloseTag}
+                {block:Caption}<div class="panoramacaption">{Caption}</div>{/block:Caption}
+            {/block:Panorama}
+           
+            <!--VIDEO POST-->
+            {block:Video}
+                {Video-400}
+                {block:Caption}<div class="videocaption">{Caption}</div>{/block:Caption}
+            {/block:Video}
+           
+            <!--AUDIO POST-->
+            {block:Audio}
+                {AudioEmbed-400}{block:Caption}<div class="audiocaption">{Caption}</div>{/block:Caption}
+            {/block:Audio}
+           
+            {block:Date}
+                <div class="controls">
+                <a href="{ReblogURL}" target="_blank" class="reblog">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 361.095 361.095" style="enable-background:new 0 0 361.095 361.095;" xml:space="preserve"><g><g><path d="M182.595,325.678c-63.183,0-120.133-42.217-138.267-102.567c-2.833-9.067-12.183-14.167-21.25-11.333    c-9.067,2.833-14.167,12.183-11.333,21.25c22.95,75.933,91.517,126.65,170.85,126.65c98.317,0,178.5-80.183,178.5-178.5    s-80.183-178.5-178.5-178.5c-55.817,0-108.233,26.633-141.667,69.7l-7.083-56.1c-1.133-9.35-9.633-15.867-18.983-14.733    C5.511,2.678-1.005,11.178,0.128,20.528l13.317,103.7c1.133,8.5,8.5,14.733,16.717,14.733c0.567,0,1.417,0,1.983,0l102.567-11.617    c9.35-1.133,16.15-9.35,15.017-18.7s-9.35-16.15-18.7-15.017l-68.85,7.65c26.633-39.95,71.683-64.6,120.417-64.6    c79.617,0,144.5,64.883,144.5,144.5S262.211,325.678,182.595,325.678z"/></g></g></svg>
+                </a>
+                <a href="{LikeURL}" class="like">{LikeButton}
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 442.403 442.403" style="enable-background:new 0 0 442.403 442.403;" xml:space="preserve"><g><g><path d="M213.05,422.652c2.833,1.7,5.95,2.833,9.35,2.833c3.117,0,6.517-0.85,9.35-2.833c7.65-5.1,187.283-123.533,207.683-243.95    c10.483-62.333-8.783-100.867-26.633-122.117c-20.967-24.933-52.133-39.667-83.017-39.667c-10.2,0-20.117,1.7-28.9,5.1    c-43.067,16.15-72.25,44.767-88.117,64.317c-15.583-19.267-42.217-47.033-74.517-58.083c-9.917-3.4-20.683-5.1-32.017-5.1    c-28.9,0-56.383,11.9-75.367,32.867c-16.717,18.417-35.7,53.55-29.75,114.75C13.016,291.185,204.833,417.268,213.05,422.652z     M56.083,78.685c17.283-18.983,38.817-21.817,50.15-21.817c7.367,0,14.45,1.133,20.967,3.4    c39.383,13.317,70.833,63.467,71.4,63.75c3.117,5.1,8.783,8.217,14.733,7.933c5.95,0,11.333-3.4,14.45-8.5    c0.283-0.567,28.617-48.733,85.283-69.983c4.817-1.7,10.767-2.833,16.717-2.833c20.967,0,42.217,10.483,56.95,27.767    c19.267,22.667,25.783,55.533,18.983,94.633c-7.367,43.067-42.5,94.633-101.717,149.317c-33.433,30.883-66.3,54.683-81.6,65.45    c-16.15-11.05-51-36.55-86.417-68.85C74.216,262.285,39.366,209.868,35.116,167.368C31.433,128.552,38.516,97.952,56.083,78.685z"/></g></g></svg>
+                </a>
+                
+                <span class="perm"><a href="{Permalink}" class="permalink"title="{NoteCountWithLabel}"><i class="far fa-comments"></i></a></span>
+                </div>
+                <br />
+                {block:IfShowTags}{block:HasTags}<div class="tag"><i class="fas fa-tags" aria-hidden="true"></i>{block:Tags} #<a href="{TagURL}">{Tag}</a>{/block:Tags}.
+                </div>{/block:HasTags}{/block:IfShowTags}
+            {/block:Date}
+            
+            {block:Permalink}<div class="postnotes">{block:Date}{TimeAgo}{/block:Date}{block:NoteCount}, {NoteCountWithLabel}{/block:NoteCount}</div>{/block:Permalink}
+                <br />
+            {block:Permalink}{block:PostNotes}
+                <div class="notecontainer">{PostNotes}</div>
+            {/block:PostNotes}{/block:Permalink}
+               
+            </div>
+       
+        {/block:Posts}
+
+    </div>
+    
+    <div class="pagination">
+            {block:Pagination}
+            {block:PreviousPage}<a href="{PreviousPage}" class="pagelinks"><i class="fas fa-arrow-circle-left" aria-hidden="true"></i></a></a>{/block:PreviousPage}&emsp;{CurrentPage}&emsp;{block:NextPage}<a href="{NextPage}" class="pagelinks"><i class="fas fa-arrow-circle-right" aria-hidden="true"></i></a>{/block:NextPage}
+            {/block:Pagination}
+    </div>
+
+    <span class="credit"><a href="https://chaithms.tumblr.com"><i class="fa fa-coffee" aria-hidden="true"></i></a></span>
+    
+    <div class="hcontrols"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 216 216" enable-background="new 0 0 216 216" xml:space="preserve"><path d="M106.6,134c14.3,0,26-11.7,26-26s-11.7-26-26-26s-26,11.7-26,26S92.2,134,106.6,134z M106.6,94c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S98.9,94,106.6,94z M40.4,124.6l7.2,3.3c3,1.4,4.4,4.8,3.3,7.9l-2.8,7.4c-2.1,5.7-1.4,11.8,2.1,16.7c3.4,5,9,7.9,15,7.9c2.2,0,4.4-0.4,6.5-1.2l7.4-2.8c0.7-0.3,1.4-0.4,2.2-0.4c2.4,0,4.7,1.4,5.7,3.7l3.3,7.2c3,6.6,9.4,10.7,16.6,10.7s13.6-4.1,16.6-10.7l3.3-7.2c1-2.2,3.2-3.7,5.7-3.7c0.7,0,1.5,0.1,2.2,0.4l7.4,2.8c2.1,0.8,4.3,1.2,6.5,1.2c0,0,0,0,0,0c5.9,0,11.5-3,15-7.9c3.4-5,4.2-11.1,2.1-16.7l-2.8-7.4c-1.1-3.1,0.3-6.5,3.3-7.9l7.2-3.3c6.6-3,10.7-9.4,10.7-16.6s-4.1-13.6-10.7-16.6l-7.2-3.3c-3-1.4-4.4-4.8-3.3-7.9l2.8-7.4c2.1-5.7,1.4-11.8-2.1-16.7c-3.4-5-9-7.9-15-7.9c-2.2,0-4.4,0.4-6.5,1.2l-7.4,2.8c-0.7,0.3-1.4,0.4-2.2,0.4c-2.4,0-4.7-1.4-5.7-3.7l-3.3-7.2c-3-6.6-9.4-10.7-16.6-10.7S93,35.2,90,41.8l-3.3,7.2c-1,2.2-3.2,3.7-5.7,3.7c-0.7,0-1.5-0.1-2.2-0.4l-7.4-2.8c-2.1-0.8-4.3-1.2-6.5-1.2c-5.9,0-11.5,3-15,7.9c-3.4,5-4.2,11.1-2.1,16.7l2.8,7.4c1.1,3.1-0.3,6.5-3.3,7.9l-7.2,3.3c-6.6,3-10.7,9.4-10.7,16.6S33.8,121.6,40.4,124.6z M45.3,102.3l7.2-3.3c8.7-4,12.9-14.1,9.5-23l-2.8-7.4c-1-2.7,0-4.7,0.7-5.7c1.6-2.4,4.6-3.4,7.4-2.3l7.4,2.8c2.1,0.8,4.2,1.2,6.4,1.2c0,0,0,0,0,0c7.1,0,13.6-4.2,16.6-10.7l3.3-7.2c1.5-3.4,4.7-3.7,5.7-3.7s4.1,0.3,5.7,3.7l3.3,7.2c3,6.5,9.5,10.7,16.6,10.7c2.2,0,4.3-0.4,6.4-1.2l7.4-2.8c2.8-1,5.7,0,7.4,2.3c0.7,1,1.7,3,0.7,5.7l-2.8,7.4c-3.3,8.9,0.8,19,9.5,23l7.2,3.3c3.4,1.5,3.7,4.7,3.7,5.7s-0.3,4.1-3.7,5.7l-7.2,3.3c-8.7,4-12.9,14.1-9.5,23l2.8,7.4c1,2.7,0,4.7-0.7,5.7c-1.6,2.4-4.6,3.4-7.4,2.3l-7.4-2.8c-2.1-0.8-4.2-1.2-6.4-1.2c-7.1,0-13.6,4.2-16.6,10.7l-3.3,7.2c-1.5,3.4-4.7,3.7-5.7,3.7s-4.1-0.3-5.7-3.7l-3.3-7.2c-3-6.5-9.5-10.7-16.6-10.7c-2.2,0-4.3,0.4-6.4,1.2l-7.4,2.8c-2.8,1-5.7,0-7.4-2.3c-0.7-1-1.7-3-0.7-5.7l2.8-7.4c3.3-8.9-0.8-19-9.5-23l-7.2-3.3c-3.4-1.5-3.7-4.7-3.7-5.7S41.9,103.9,45.3,102.3z"/></svg></div>
+    
+</body>
+
+</html>
