@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<!--------------------------------------------------------------------
+
+theme #002: aurora by di (@duskypetals) on the blog @chaithms
+
+- code belongs to me, except for the following excerpts
+
+* audio post styling by @roxiestheme
+* tumblr controls by @cyantists
+* custom like/reblog buttons by @shythemes
+* credit icon on fontawesome
+
+- there might be errors in the code, because this is my first time theming. please drop an ask in our inbox (https://chaithms.tumblr.com/ask) or send a dm and i'll be sure to answer.
+
+- you may modify some parts of the code, but please do not use this as a base code or change it beyond recognition. 
+
+- i have not used an external css sheet, so please take care that you don't modify the css.
+
+- please do not remove the credits.
+
+- enjoy!!! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+-------------------------------------------------------------------->
+
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <meta name="description" content="" />
+    <meta http-equiv="x-dns-prefetch-control" content="off"/>
+    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway:light|Titillium+Web" rel="stylesheet">
+    <script type=”text/javascript” src=”http://static.tumblr.com/p2evvtm/Wycm17d1m/tumblr_search_box.js”></script>
+    
+    
+    <!--META TAGS-->    
+    <meta name="color:Background Color" content="#fff" />
+    <meta name="color:Font Color" content="#000" />
+    <meta name="color:Accent 1" content="#d4b5ff" />
+    <meta name="color:Accent 2" content="#f9b5ff" />
+    <meta name="color:Accent 3" content="#ffb5e0" />
+    <meta name="color:Accent 4" content="#ffb5bb" />
+    <meta name="color:Accent 5" content="#ffd4b5" />
+    <meta name="color:Accent 6" content="#fff9b5" />
+    <meta name="select:Font" content="raleway" title="Raleway" />
+    <meta name="select:Font" content="lora" title="Lora" />
+    <meta name="select:Font" content="titillium" title="Titillium Web" />
+    <meta name="if:Show Tags" content="1"/>
+    <meta name="if:Search Bar" content="1"/>
+    <meta name="if:Small Cursor" content="1"/>
+    <meta name="text:Link 1 URL" content="/" />
+    <meta name="text:Link 1 Name" content="one" />
+    <meta name="text:Link 2 URL" content="/" />
+    <meta name="text:Link 2 Name" content="two" />
+    <meta name="text:Link 3 URL" content="/" />
+    <meta name="text:Link 3 Name" content="three" />
+    <meta name="text:Link 4 URL" content="/" />
+    <meta name="text:Link 4 Name" content="four" />
+    <meta name="text:Search Label" content="" />
+
+
+    <!--STYLE-->
+    <style type="text/css">
+ 
+        .raleway {
+            font-family: 'Raleway', sans-serif;
+        }
+ 
+        .lora {
+            font-family: 'Lora', serif;
+        }
+ 
+        .titillium {
+            font-family: 'Titillium Web', sans-serif;
+        }
+ 
+        body {
+            font-size: 10px;
+            font-family: {select:Font};
+            color: {color:Font Color};
+            background-color: {color:Background Color};
+        }
+ 
+        a {
+            color: {color:Accent 5};
+            text-decoration: none;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        a:hover {
+            color: {color:Accent 3};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        a.link {
+            font-size: 14px;
+            color: {color:Accent 4};
+            text-decoration: none;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        a.link:hover {
+            color: {color:Accent 6};
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        a.sidebarlinks {
+            color: {color:Accent 6};
+            text-decoration: none;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        a.sidebarlinks:hover {
+            color: {color:Accent 3};
+            text-decoration: none;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        a.credits {
+            color: {color:Accent 1};
+            text-decoration: none;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        a.credits:hover {
+            color: #000;
+            text-decoration: none;
+            -moz-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+ 
+        .title {
+            width: 600px;
+            text-align: center;
+            font-style: 'light';
+            font-size: 45px;
+            color: {color:Accent 1};
+            padding: 10px 0px 25px 0px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+ 
+        .sidebar1 {
+            width: 100px;
+            position: fixed;
+            margin-top: 200px;
+            margin-left: 120px;
+ 
+        }
+ 
+        .sidebar2 {
+            width: 100px;
+            position: fixed;
+            margin-top: 180px;
+            margin-left: 1150px;
+ 
+        }
+ 
+        .sidebarlinks li {
+            font-size: 11px;
+            color: {color:Accent 6};
+            list-style: none;
+            padding-bottom: 2.5px;
+            border-bottom: 1px solid {color:Accent 5};
+        }
+ 
+        .sidebarimg {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: 100%;
+            padding: 5px;
+            border: 1px solid {color:Accent 6};
+        }
+ 
+        .desc {
+            text-align: justify;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            color: {color:Accent 6};
+        }
+ 
+        .pagination {
+            font-size: 12px;
+            padding: 5px;
+            text-align: center;
+            color: {color:Accent 6};
+        }
+ 
+        .postcol {
+            width: 550px;
+            margin-right: auto;
+            display: block;
+            margin-left: auto;
+            margin-top: 30px;
+        }
+ 
+        .posts {
+            width: 500px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 0.5px solid {color:Accent 2};
+        }
+ 
+        .posts blockquote {
+            border-left: 1px solid {color:Accent 5};
+            padding-left: 5px;
+        }
+ 
+        .posts img, .posts li, .posts blockquote {
+            max-width: 100%;
+        }
+ 
+        .texttitle {
+            color: {color:Accent 4};
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+ 
+        .textbody {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+ 
+        .askerpic {
+            border-radius: 100%;
+            top: 10px;
+        }
+ 
+        .question {
+            color: {color:Accent 4};
+            font-size: 12px;
+            display: inline-block;
+            position: relative;
+            padding-left: 5px;
+            margin-top: 5px;
+            max-width: 90%;
+        }
+ 
+        h5 {
+            font-size: 12px;
+            color: {color:Accent 4};
+            font-style: light;
+            margin: 0 auto;
+        }
+ 
+        .quote {
+            padding: 5px;
+        }
+ 
+        .chattitle {
+            font-size: 14px;
+            color: {color:Accent 4};
+            font-style: light;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+ 
+        .chat li {
+            list-style-type: none;
+            padding-bottom: 5px;
+        }
+ 
+        .label {
+            color: {color:Accent 5};
+            font-weight: bold;
+        }
+ 
+        .photo {
+            margin: auto;
+        }
+ 
+        .photocaption, .photosetcaption, .videocaption, .panoramacaption {
+            padding-top: 10px;
+            font-size: 11px;
+            margin: auto;
+        }
+ 
+ 
+        .postnotes {
+            text-align: center;
+            font-style: italic;
+            color: {color:Accent 6};
+        }
+ 
+        .notecontainer {
+          margin: 20px auto;
+          width: 500px;
+          font-size: 11px;
+        }
+ 
+        .notecontainer ol.notes {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+ 
+        .notecontainer img.avatar {
+          margin-right: 10px;
+          margin-top: 5px;
+          width: 16px;
+          height: 16px;
+          border-radius: 100%;
+        }
+ 
+        .tags {
+            color: {color:Accent 4};
+            font-style: italic;
+            text-align: center;
+        }
+ 
+        #tags .comma: last-child {
+            display: none;
+        }
+ 
+        .iframe-controls--desktop {
+           position:fixed;
+           top:0px;
+           right:0px;
+           z-index:214748364789123456789;
+           filter:invert(100%);
+           -webkit-filter:invert(100%);
+           -webkit-transform:scale(0.6,0.6);
+           -webkit-transform-origin: 100% 0%;
+           -ms-transform-origin:100% 0%;
+           -ms-transform:scale(0.6,0.6);
+           transform:scale(0.6,0.6);
+           transform-origin:100% 0%;
+        }
+ 
+        .credit a {
+            bottom: 10px;
+            right: 10px;
+            font-size: 15px;
+            position: fixed;
+            color: {color:Accent 6};
+            background-color: {color:Background Color};
+            padding: 4px;
+            border: 1px solid {color:Accent 6};
+        }
+        .credit a:hover {
+            color: {color:Accent 1};
+        }
+ 
+        .search {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            border: {color:Accent 1} solid 1px;
+        }
+ 
+        .sfm input {
+            background-color: {color:Background Color};
+ 
+            font-size: 8px;
+            border: 0px;
+            text-transform: uppercase;
+            margin-top: 0px;
+            color: {color:Accent 6};
+            letter-spacing: 1px;
+            padding: 4px 8px;
+            font-family: {select:Font};
+        }
+ 
+        svg {
+           width:10px;
+           height:auto;
+           opacity:.5;
+           padding:1px;
+           display:block;
+           overflow:visible;
+        }
+ 
+        .controls a {
+           position:relative;
+           display:inline-block;
+           overflow:hidden;
+           padding:10px 5px 5px 5px;
+           width:12px;
+           height:12px;
+        }
+        .controls .reblog {
+           opacity:.93;
+           margin-left: 227px;
+        }
+        .controls .reblog svg {
+           width:9px;
+           margin-top:1px;
+        }
+        .controls .like .liked + svg {
+           opacity:1;
+        }
+        .controls .like .liked + svg path {
+           fill:#ec5a5a;
+        }
+        .controls .like .like_button {
+           position:relative;
+        }
+        .controls .like .like_button iframe {
+           position:absolute;
+           top:0;
+           left:0;
+           bottom:0;
+           right:0;
+           z-index:2;
+           opacity:0;
+        }
+ 
+        {block:IfSmallCursor}*, body, a, a:hover {cursor: url(https://78.media.tumblr.com/tumblr_lqs4qoKE1V1qfoi4t.png), auto;}{/block:IfSmallCursor}
+        
+        ::-webkit-scrollbar {
+            width: 5px;
+            background: {color:Background Color};
+            border: 1px solid {color:Background Color}; 
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: {color:Accent 3};
+            border: 1px solid {color:Background Color};
+        }
+ 
+        {CustomCSS}
+ 
+    </style>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/de4df345a4.js"></script>
+    <script>
+   $(document).ready(function() {
+      $('iframe.tumblr_audio_player').load( function() {
+         $('iframe.tumblr_audio_player').contents().find("head")
+            .append($("<style type='text/css'> .audio-player{background:{color:Accent 3} !important} </style>"));
+      });
+   });
+</script>
+</head>
+
+<!--BODY/HTML-->
+<body>
+
+    <!--HEADER-->
+    <div class="title">
+        {Title}
+    </div>
+    
+    <!--LEFT SIDEBAR-->
+    <div class="sidebar1">
+        <img src="{PortraitURL-64}" class="sidebarimg">
+        <div class="desc">{Description}</div>
+        <div class="pagination">
+        {block:Pagination}
+        {block:PreviousPage}<a href="{PreviousPage}"><</a></a>{/block:PreviousPage}&emsp;{CurrentPage}&emsp;{block:NextPage}<a href="{NextPage}">></a>{/block:NextPage}
+        {/block:Pagination}
+        </div>
+    </div>
+    
+    <!--RIGHT SIDEBAR-->
+    <div class="sidebar2">
+    <ul class="sidebarlinks">
+        <li><a href="/" class="sidebarlinks">index</a></li>
+        {block:AskEnabled}<li><a href="/ask" class="sidebarlinks">message</a></li>{/block:AskEnabled}
+        {block:SubmissionsEnabled}<li><a href="submit" class="sidebarlinks">submit</a></li>{/block:SubmissionsEnabled}
+        <li><a href="{text:Link 1 URL}" class="sidebarlinks">{text:Link 1 Name}</a></li>
+        <li><a href="{text:Link 2 URL}" class="sidebarlinks">{text:Link 2 Name}</a></li>
+        <li><a href="{text:Link 3 URL}" class="sidebarlinks">{text:Link 3 Name}</a></li>
+        <li><a href="{text:Link 4 URL}" class="sidebarlinks">{text:Link 4 Name}</a></li>
+    </ul>
+    </div>
+    
+    <!--POSTS-->
+    <div class="postcol">
+
+    
+        {block:Posts}
+        <div class="posts">
+            
+            <!--TEXT POST-->
+            {block:Text}
+            {block:Title}<div class="texttitle">{Title}</div>{/block:Title}
+            {Body}
+            {/block:Text}
+            
+            <!--ANSWER POST-->
+            {block:Answer}
+                <img src="{AskerPortraitURL-24}" class="askerpic"><div class="question">{Asker} asked: "{Question}"</div>
+                {Answer}
+            {/block:Answer}
+            
+            <!--QUOTE POST-->
+            {block:Quote}
+                <div class="quote">
+                <div class="quotetext_{Length}"><h5>"{Quote}"</h5></div><br><br>
+                {block:Source}<div class="source">&mdash;{Source}</div>{/block:Source}
+                </div>
+            {/block:Quote}
+            
+            <!--LINK POST-->
+            {block:Link}
+                <a href="{URL}" class="link">{Name}</a>
+                {block:Description}{Description}{/block:Description}  
+            {/block:Link}
+            
+            <!--CHAT POST-->
+    	        {block:Chat}<div class="chat">
+{block:Title}<div class="chattitle">{Title}</div>{/block:Title}
+{block:Lines}<li>{block:Label}<span class="label">{Label} </span>{/block:Label}{Line}</li>{/block:Lines}</div>
+            {/block:Chat}
+    		
+    		<!--PHOTO POST-->
+    		{block:Photo}
+                {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" class="photo">{LinkCloseTag}
+				{block:Caption}<div class="photocaption">{Caption}</div>{/block:Caption}
+            {/block:Photo}
+            
+            <!--PHOTOSET POST-->
+            {block:Photoset}
+                {Photoset-500}
+                {block:Caption}<div class="photosetcaption">{Caption}</div>{/block:Caption}
+            {/block:Photoset}
+            
+            <!--PANORAMA POST-->
+			{block:Panorama}
+                {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" class="photo">{LinkCloseTag}
+                {block:Caption}<div class="panoramacaption">{Caption}</div>{/block:Caption}
+            {/block:Panorama}
+            
+            <!--VIDEO POST-->
+            {block:Video}
+                {Video-500}
+                {block:Caption}<div class="videocaption">{Caption}</div>{/block:Caption}
+            {/block:Video}
+            
+            <!--AUDIO POST-->
+            {block:Audio}
+                {AudioEmbed}{block:Caption}{Caption}{/block:Caption}
+            {/block:Audio}
+        
+            {block:PostNotes}
+                <div class="notecontainer">{PostNotes}</div>
+            {/block:PostNotes}
+            
+            {block:Date}
+				<div class="controls">
+                <a href="{ReblogURL}" target="_blank" class="reblog">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 361.095 361.095" style="enable-background:new 0 0 361.095 361.095;" xml:space="preserve"><g><g><path d="M182.595,325.678c-63.183,0-120.133-42.217-138.267-102.567c-2.833-9.067-12.183-14.167-21.25-11.333    c-9.067,2.833-14.167,12.183-11.333,21.25c22.95,75.933,91.517,126.65,170.85,126.65c98.317,0,178.5-80.183,178.5-178.5    s-80.183-178.5-178.5-178.5c-55.817,0-108.233,26.633-141.667,69.7l-7.083-56.1c-1.133-9.35-9.633-15.867-18.983-14.733    C5.511,2.678-1.005,11.178,0.128,20.528l13.317,103.7c1.133,8.5,8.5,14.733,16.717,14.733c0.567,0,1.417,0,1.983,0l102.567-11.617    c9.35-1.133,16.15-9.35,15.017-18.7s-9.35-16.15-18.7-15.017l-68.85,7.65c26.633-39.95,71.683-64.6,120.417-64.6    c79.617,0,144.5,64.883,144.5,144.5S262.211,325.678,182.595,325.678z"/></g></g></svg>
+                </a>
+                <a href="#" class="like">{LikeButton}
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 442.403 442.403" style="enable-background:new 0 0 442.403 442.403;" xml:space="preserve"><g><g><path d="M213.05,422.652c2.833,1.7,5.95,2.833,9.35,2.833c3.117,0,6.517-0.85,9.35-2.833c7.65-5.1,187.283-123.533,207.683-243.95    c10.483-62.333-8.783-100.867-26.633-122.117c-20.967-24.933-52.133-39.667-83.017-39.667c-10.2,0-20.117,1.7-28.9,5.1    c-43.067,16.15-72.25,44.767-88.117,64.317c-15.583-19.267-42.217-47.033-74.517-58.083c-9.917-3.4-20.683-5.1-32.017-5.1    c-28.9,0-56.383,11.9-75.367,32.867c-16.717,18.417-35.7,53.55-29.75,114.75C13.016,291.185,204.833,417.268,213.05,422.652z     M56.083,78.685c17.283-18.983,38.817-21.817,50.15-21.817c7.367,0,14.45,1.133,20.967,3.4    c39.383,13.317,70.833,63.467,71.4,63.75c3.117,5.1,8.783,8.217,14.733,7.933c5.95,0,11.333-3.4,14.45-8.5    c0.283-0.567,28.617-48.733,85.283-69.983c4.817-1.7,10.767-2.833,16.717-2.833c20.967,0,42.217,10.483,56.95,27.767    c19.267,22.667,25.783,55.533,18.983,94.633c-7.367,43.067-42.5,94.633-101.717,149.317c-33.433,30.883-66.3,54.683-81.6,65.45    c-16.15-11.05-51-36.55-86.417-68.85C74.216,262.285,39.366,209.868,35.116,167.368C31.433,128.552,38.516,97.952,56.083,78.685z"/></g></g></svg>
+                </a>
+                </div>
+                
+                <br />
+                <div class="postnotes"><a href="{Permalink}#notes">{block:Date}{TimeAgo}{/block:Date}, {block:NoteCount}{NoteCountWithLabel}{/block:NoteCount}</a></div>
+                <br />
+                {block:IfShowTags}{block:HasTags}<div class="tags">tags:  
+                    {block:Tags} <a href="{TagURL}">{Tag}</a><span class="comma">, </span>{/block:Tags}.
+                </div>{/block:HasTags}{/block:IfShowTags}
+			{/block:Date}
+                
+            </div>
+        
+        {/block:Posts}
+        
+        </div>
+        
+        {block:IfSearchBar}<div class="search"><form action="/search" method="get" class="sfm">
+    <input type="text" name="q" value="{SearchQuery}"/>
+    <input type="submit" value="Search"/>
+</form></div>{/block:IfSearchBar}
+        
+        <div class="credit"><a href="https://chaithms.tumblr.com"><i class="fa fa-coffee" aria-hidden="true"></i></a>
+
+</body>
+
+</html>
